@@ -16,7 +16,7 @@ const App = () => {
             ></i>
           </div>
           <div className="logo">
-            <h1>GAS KHIÊM</h1>
+            <h2>GAS KHIÊM</h2>
           </div>
           <ul style={{ transform: smallMenu ? "translateX(0)" : "" }}>
             <li onClick={() => setSmallMenu(false)}>

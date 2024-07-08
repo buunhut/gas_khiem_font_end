@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "animate.css";
 import "./app.scss";
 import TypingEffect from "./component/TypingEffect";
 
 const App = () => {
   const [smallMenu, setSmallMenu] = useState(false);
+  useEffect(() => {
+    if (smallMenu) {
+      // Lock scrolling
+      document.body.style.overflow = "hidden";
+    } else {
+      // Unlock scrolling
+      document.body.style.overflow = "scroll";
+    }
+  }, [smallMenu]);
   return (
     <div>
       <div id="header">

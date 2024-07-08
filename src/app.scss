@@ -106,22 +106,24 @@ html {
                 color: #555555;
             }
 
-            button {
-                padding: 10px 20px;
-                border: none;
-                background-color: orangered;
-                font-size: 18px;
-                border-radius: 15px 0 15px 0;
-                margin: 20px auto;
-                cursor: pointer;
-                transition: all .5s;
+            a {
+
+                button {
+                    padding: 10px 20px;
+                    border: none;
+                    background-color: orangered;
+                    font-size: 18px;
+                    border-radius: 15px 0 15px 0;
+                    margin: 20px auto;
+                    cursor: pointer;
+                    transition: all .5s;
 
 
-                &:hover {
-                    background-color: red;
-                }
+                    &:hover {
+                        background-color: red;
+                    }
 
-                a {
+
                     text-decoration: none;
                     color: white;
 

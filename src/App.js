@@ -44,8 +44,8 @@ const App = () => {
       <div id="trangChu">
         <div className="content">
           <div className="contentItem fadeInLeft">
-            <h1>ĐẠI LÝ GAS KHIÊM</h1>
-            {/* <TypingEffect text="ĐẠI LÝ GAS - BẾP GAS KHIÊM" speed={100} /> */}
+            {/* <h1>ĐẠI LÝ GAS KHIÊM</h1> */}
+            <TypingEffect text="ĐẠI LÝ GAS KHIÊM" speed={100} />
             <div>
               <p>
                 <i className="fa-regular fa-hand-point-right"></i> Chuyên kinh
@@ -65,11 +65,11 @@ const App = () => {
                 chúng tôi.
               </p>
             </div>
-            <button className="fadeInUp">
-              <a href="tel:+84939710395">
+            <a href="tel:+84939710395">
+              <button className="fadeInUp">
                 <i className="fa-solid fa-phone"></i> 0939 710 395
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
           <div className="contentItem fadeInUp">
             <img src="./img/banner2.jpg" alt="" />

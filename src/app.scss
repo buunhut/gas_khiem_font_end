@@ -344,7 +344,7 @@ html {
 }
 
 .fadeInUp {
-    animation: fadeInUp 3s;
+    animation: fadeInUp 3s ;
 
 }
 
@@ -511,7 +511,7 @@ html {
     }
 
     100% {
-        transform: translateY(0x);
+        transform: translateY(0);
         opacity: 1;
 
     }

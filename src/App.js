@@ -25,7 +25,11 @@ const App = () => {
             ></i>
           </div>
           <div className="logo">
-            <h2>GAS KHIÊM</h2>
+            <h2
+            // className="animate__animated animate__flip animate__infinite animate__slower"
+            >
+              GAS KHIÊM
+            </h2>
           </div>
           <ul style={{ transform: smallMenu ? "translateX(0)" : "" }}>
             <li onClick={() => setSmallMenu(false)}>
@@ -80,8 +84,8 @@ const App = () => {
               </button>
             </a>
           </div>
-          <div className="contentItem fadeInUp">
-            <img src="./img/banner2.jpg" alt="" />
+          <div className="contentItem fadeInUp animate__animated animate__flip animate__infinite animate__slower">
+            <img src="./img/banner2.jpg" alt="" className="" />
           </div>
         </div>
       </div>

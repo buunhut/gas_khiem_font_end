@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "animate.css";
 import "./app.scss";
+import TypingEffect from "./component/TypingEffect";
 
 const App = () => {
   const [smallMenu, setSmallMenu] = useState(false);
@@ -43,7 +44,8 @@ const App = () => {
       <div id="trangChu">
         <div className="content">
           <div className="contentItem fadeInLeft">
-            <h1>ĐẠI LÝ GAS KHIÊM</h1>
+            {/* <h1>ĐẠI LÝ GAS KHIÊM</h1> */}
+            <TypingEffect text="ĐẠI LÝ GAS - BẾP GAS KHIÊM" speed={100} />
             <div>
               <p>
                 <i className="fa-regular fa-hand-point-right"></i> Chuyên kinh

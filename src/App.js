@@ -202,7 +202,7 @@ const App = () => {
       </div>
       <div id="footer">
         <div className="content">
-          <p>Gas Khiêm - Copy right 2024 </p>
+          <p>Gas Khiêm - Copy-right 2024 </p>
           <span> Code by Zero - 0909240886</span>
         </div>
       </div>

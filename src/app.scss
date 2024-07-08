@@ -295,6 +295,27 @@ html {
     }
 }
 
+#about {
+    height: calc(100vh / 2);
+
+    background-image: url('../public/img/banner1.jpg');
+    background-size: cover;
+    /* hình ảnh sẽ tự động được phóng to hoặc thu nhỏ để vừa với phần tử */
+    background-position: center;
+    /* căn giữa hình ảnh */
+    background-repeat: no-repeat;
+    /* không lặp lại hình ảnh */
+    background-attachment: fixed;
+    filter: grayscale(100%);
+    /* chuyển hình ảnh thành đen trắng */
+    position: relative;
+    /* đặt vị trí tương đối */
+    z-index: 0;
+    /* đặt z-index để không nằm trên cùng */
+    padding-top: 90px;
+
+}
+
 
 #contact {
     height: 100vh;
@@ -419,7 +440,6 @@ html {
 
             .sanPhamItem {
                 width: 100%;
-                height: 300px;
                 background-color: orange;
             }
 
@@ -430,6 +450,29 @@ html {
             }
         }
     }
+
+    #about {
+        // height: calc(100vh / 2);
+        height: 300px;
+
+        background-image: url('../public/img/banner1.jpg');
+        background-size: contain;
+        /* hình ảnh sẽ tự động được phóng to hoặc thu nhỏ để vừa với phần tử */
+        background-position: center;
+        /* căn giữa hình ảnh */
+        background-repeat: no-repeat;
+        /* không lặp lại hình ảnh */
+        background-attachment: fixed;
+        filter: grayscale(100%);
+        /* chuyển hình ảnh thành đen trắng */
+        position: relative;
+        /* đặt vị trí tương đối */
+        z-index: 0;
+        /* đặt z-index để không nằm trên cùng */
+        padding-top: 90px;
+
+    }
+
 
     #contact {
         padding: 100px 0px 0px;

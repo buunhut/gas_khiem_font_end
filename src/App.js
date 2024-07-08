@@ -44,8 +44,8 @@ const App = () => {
       <div id="trangChu">
         <div className="content">
           <div className="contentItem fadeInLeft">
-            {/* <h1>ĐẠI LÝ GAS KHIÊM</h1> */}
-            <TypingEffect text="ĐẠI LÝ GAS - BẾP GAS KHIÊM" speed={100} />
+            <h1>ĐẠI LÝ GAS KHIÊM</h1>
+            {/* <TypingEffect text="ĐẠI LÝ GAS - BẾP GAS KHIÊM" speed={100} /> */}
             <div>
               <p>
                 <i className="fa-regular fa-hand-point-right"></i> Chuyên kinh
@@ -186,6 +186,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <div id="about"></div>
       <div id="contact">
         <div className="content">
           <h1>Địa chỉ</h1>

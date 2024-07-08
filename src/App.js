@@ -167,7 +167,7 @@ const App = () => {
             <div className="overlay"></div>
           </div>
           <div className="sanPhamBepItem">
-            <h1>Kính Cao Cáp Mol</h1>
+            <h1>Kính Cao Cấp Mol</h1>
             <h2>1.300.000đ</h2>
 
             <div className="overlay"></div>
@@ -202,7 +202,7 @@ const App = () => {
       </div>
       <div id="footer">
         <div className="content">
-          <p>Gas Khiêm - Copy-right 2024 </p>
+          <p>Gas Khiêm - Copyright 2024 </p>
           <span> Code by Zero - 0909240886</span>
         </div>
       </div>

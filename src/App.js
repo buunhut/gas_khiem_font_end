@@ -84,7 +84,7 @@ const App = () => {
               </button>
             </a>
           </div>
-          <div className="contentItem fadeInUp animate__animated animate__flip animate__infinite animate__slower">
+          <div className="contentItem fadeInUp ">
             <img src="./img/banner2.jpg" alt="" className="" />
           </div>
         </div>

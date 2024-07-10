@@ -174,7 +174,6 @@ html {
             width: calc((100% - 60px) / 4);
             height: 500px;
             background-color: orange;
-            cursor: pointer;
             position: relative;
             overflow: hidden;
             display: flex;
@@ -213,6 +212,23 @@ html {
                 p {
                     color: white;
                     text-align: center;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    text-align: center;
+                    display: block;
+                    width: 160px;
+                    padding: 10px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    margin: 20px auto 0;
+                    transition: all .5s;
+
+                    &:hover {
+                        // color: orangered;
+                    }
                 }
 
                 h2 {

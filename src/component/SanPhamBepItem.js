@@ -8,7 +8,7 @@ const SanPhamBepItem = ({ product }) => {
       <div className="overlay">
         <h1>{name}</h1>
         <p>{detail}</p>
-        <h2>{price?.toLocaleString()}</h2>
+        <h2>{price?.toLocaleString()}đ</h2>
       </div>
     </div>
   );

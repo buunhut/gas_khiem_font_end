@@ -9,7 +9,10 @@ const SanPhamItem = ({ product }) => {
       <div className="overlay">
         <h1>{name}</h1>
         <p>{detail}</p>
-        <h2>{price?.toLocaleString()}</h2>
+        <a href="tel:+84939710395">
+          <i className="fa-solid fa-phone"></i> 0939 710 395
+        </a>
+        <h2>{price?.toLocaleString()}đ</h2>
       </div>
     </div>
   );

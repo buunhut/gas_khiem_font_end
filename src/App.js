@@ -2,9 +2,19 @@ import React, { useEffect, useState } from "react";
 import "animate.css";
 import "./app.scss";
 import TypingEffect from "./component/TypingEffect";
+import { useSelector } from "react-redux";
+import SanPhamItem from "./component/SanPhamItem";
+import SanPhamBepItem from "./component/SanPhamBepItem";
 
 const App = () => {
+  const { listProducts, listProductsBep } = useSelector(
+    (state) => state.dataSlice
+  );
+
+  console.log(listProducts);
+
   const [smallMenu, setSmallMenu] = useState(false);
+
   useEffect(() => {
     if (smallMenu) {
       // Lock scrolling
@@ -92,111 +102,15 @@ const App = () => {
       <div id="sanPham">
         <h1>Bình Gas</h1>
         <div className="content">
-          <div className="sanPhamItem">
-            <h1>Bình Gas SP Đỏ</h1>
-            <h2>350.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamItem">
-            <h1>Bình Gas SP Xám</h1>
-            <h2>350.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamItem">
-            <h1>Bình Gas VT Đỏ</h1>
-            <h2>350.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamItem">
-            <h1>Bình Gas VT Xám</h1>
-            <h2>350.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamItem">
-            <h1>Bình Gas VT Xánh</h1>
-            <h2>350.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamItem">
-            <h1>Bình Gas ELF</h1>
-            <h2>410.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamItem">
-            <h1>Bình Gas TO</h1>
-            <h2>390.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
+          {listProducts?.map((item, index) => {
+            return <SanPhamItem key={index} product={item} />;
+          })}
         </div>
         <h1 className="bepGas">Bếp Gas</h1>
         <div className="content">
-          <div className="sanPhamBepItem">
-            <h1>Bếp Đầm</h1>
-            <h2>620.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Khè Gang</h1>
-            <h2>520.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Khè Inox</h1>
-            <h2>1.000.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Khè Đôi Inox</h1>
-            <h2>1.000.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Kính Đơn Cao Cấp</h1>
-            <h2>1.500.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Inox Đơn</h1>
-            <h2>300.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Kính Thường</h1>
-            <h2>500.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Kính Cao Cấp Mol</h1>
-            <h2>1.300.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Inox Thường</h1>
-            <h2>550.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
-          <div className="sanPhamBepItem">
-            <h1>Bếp Inox Namilux</h1>
-            <h2>1.600.000đ</h2>
-
-            <div className="overlay"></div>
-          </div>
+          {listProductsBep?.map((item, index) => {
+            return <SanPhamBepItem key={index} product={item} />;
+          })}{" "}
         </div>
       </div>
       <div id="about"></div>
@@ -207,9 +121,7 @@ const App = () => {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15750.779278432577!2d105.5869179!3d9.2715384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a113a67261f083%3A0x1f6c97f25719d47!2zxJDhuqFpIGzDvSBHYXMgS2hpw6pt!5e0!3m2!1sen!2s!4v1720423258553!5m2!1sen!2s&zoom=2"
             width="100%"
             height="600px"
-            allowfullscreen="true"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
